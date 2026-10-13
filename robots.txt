@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://brick-teck.github.io/clinica-estetica/sitemap.xml

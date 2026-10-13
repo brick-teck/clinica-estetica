@@ -1,0 +1,25 @@
+/* Geometrias Lucide/Feather reaproveitadas do template. Licen?as em LICENSES.md. */
+const paths = {
+ arrow:'<path d="M5 12h14m-6-6 6 6-6 6"/>',chevron:'<path d="m9 5 7 7-7 7"/>',down:'<path d="m6 9 6 6 6-6"/>',
+ search:'<circle cx="10.5" cy="10.5" r="7.5"/><path d="m16 16 5 5"/>',close:'<path d="m6 6 12 12M6 18 18 6"/>',menu:'<path d="M4 6h16M4 12h16M4 18h16"/>',
+ heart:'<path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/>',
+ activity:'<path d="M2 12h4l3-9 6 18 3-9h4"/>',stethoscope:'<path d="M6 3H4v6a4 4 0 0 0 8 0V3h-2M8 13v3a5 5 0 0 0 10 0v-3"/><circle cx="18" cy="10" r="3"/>',
+ flower:'<path d="M12 12c-9 0-9-8-4-8 3 0 4 5 4 8Zm0 0c0-9 8-9 8-4 0 3-5 4-8 4Zm0 0c9 0 9 8 4 8-3 0-4-5-4-8Zm0 0c0 9-8 9-8 4 0-3 5-4 8-4Z"/>',
+ leaf:'<path d="M20 3C8 2 3 7 5 15c3 8 16 4 15-12ZM4 21l12-12"/>',
+ eye:'<path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/>',
+ brain:'<path d="M12 4a3 3 0 0 0-6-1 4 4 0 0 0-3 6 4 4 0 0 0 0 6 4 4 0 0 0 5 6 3 3 0 0 0 4-3V4Zm0 0a3 3 0 0 1 6-1 4 4 0 0 1 3 6 4 4 0 0 1 0 6 4 4 0 0 1-5 6 3 3 0 0 1-4-3"/>',
+ move:'<circle cx="15" cy="4" r="2"/><path d="m12 8 4 3 4-1M4 11l5-3 3 4-3 5-5 3m8-8 3 4v5"/>',
+ message:'<path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5H4l-2 2V11.5a9.5 9.5 0 0 1 19 0Z"/><path d="M7 10h10M7 14h7"/>',
+ baby:'<circle cx="12" cy="12" r="9"/><path d="M9 10h.01M15 10h.01M8 14a4 4 0 0 0 8 0M12 3c0 3 3 3 3 0"/>',
+ sun:'<circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1 1m12 12 1 1M5 19l1-1M18 6l1-1"/>',
+ hand:'<path d="M8 13V6a2 2 0 0 1 4 0v6-8a2 2 0 0 1 4 0v8-5a2 2 0 0 1 4 0v9a6 6 0 0 1-10 4l-7-7a2 2 0 0 1 3-3l2 3Z"/>',
+ ear:'<path d="M6 8a6 6 0 1 1 12 0c0 6-4 5-5 10a3 3 0 0 1-6 0M9 9a3 3 0 1 1 6 0c0 2-2 2-2 4"/>',
+ wind:'<path d="M3 8h13a3 3 0 1 0-3-3M2 12h18a3 3 0 1 1-3 3M4 16h5a3 3 0 1 1-3 3"/>',
+ pin:'<path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/>',
+ calendar:'<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18M8 16h3"/>',
+ check:'<path d="m5 12 4 4L19 6"/>',clock:'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+ phone:'<path d="M22 16.9V20a2 2 0 0 1-2.2 2 19 19 0 0 1-17.8-17.8A2 2 0 0 1 4 2h3.1a2 2 0 0 1 2 1.7l.4 2.6a2 2 0 0 1-.6 1.7L7.5 9.4a16 16 0 0 0 7.1 7.1L16 15a2 2 0 0 1 1.7-.6l2.6.4a2 2 0 0 1 1.7 2.1Z"/>',
+ shield:'<path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6l8-3Z"/><path d="m8 12 3 3 5-5"/>',
+ plus:'<path d="M12 5v14M5 12h14"/>',mail:'<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/>',
+};
+window.Lumiere.icon = (name,cls='') => `<svg class="icon ${cls}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths[name]||paths.stethoscope}</svg>`;
